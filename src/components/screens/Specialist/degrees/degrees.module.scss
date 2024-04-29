@@ -1,0 +1,22 @@
+.section {
+	& > *:nth-child(1) {
+		margin-bottom: 50px;
+
+		width: 50%;
+
+		color: #000;
+	}
+}
+
+.degrees {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	& > a:nth-child(n) {
+		& > div:nth-child(1) {
+			aspect-ratio: 3/4;
+		}
+	}
+}
+
+@import './adaptive';

@@ -1,0 +1,11 @@
+@import '/src/assets/styles/vars/colors.scss';
+
+.info_wrapper {
+	margin: 30px 0 70px;
+}
+
+.info {
+	grid-column: 2;
+}
+
+@import './adaptive-mainBanner';

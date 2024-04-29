@@ -1,0 +1,11 @@
+.wrapper {
+	margin-top: 30px;
+	grid-column: 2;
+
+	& > *:nth-child(2) {
+		margin-top: 50px;
+		width: 100%;
+	}
+}
+
+@import './adaptive';

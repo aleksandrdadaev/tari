@@ -1,0 +1,96 @@
+@import './reset';
+@import './vars/colors';
+@import './modal/modal';
+@import './form/form';
+@import './vars/theme';
+
+* {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	color: #000;
+
+	scroll-behavior: smooth;
+}
+
+@mixin fontSize($fontSize, $lineHeight) {
+	font-size: calc($fontSize * $font-size);
+	line-height: calc($lineHeight * $font-size);
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav_link {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 500;
+
+	white-space: nowrap;
+}
+
+.active {
+	color: $color-green;
+}
+
+.info_wrapper {
+	margin: 30px 0 70px;
+}
+.info {
+	grid-column: 2;
+
+	& > *:nth-child(2) {
+		margin-top: 15px;
+	}
+}
+
+.document_list {
+	margin-top: 50px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.document_link {
+	& > p:nth-child(1) {
+		color: $color-green;
+		text-decoration: underline;
+	}
+}
+
+.green-button {
+	padding: 25px 30px;
+	border: 1px solid $color-green;
+
+	font-size: 20px;
+	line-height: 20px;
+	color: $color-green;
+}
+
+.paragraph {
+	@include fontSize(18px, 25px);
+}
+
+.main-title {
+	font-size: 96px;
+	line-height: 115px;
+	color: $color-green;
+}
+
+.sub-title {
+	font-size: 48px;
+	line-height: 58px;
+	font-weight: 600;
+
+	color: $color-green;
+}
+
+.another-title {
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 500;
+}
+
+@import './adaptive-global';

@@ -1,0 +1,13 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.footer {
+		padding: 50px 0;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

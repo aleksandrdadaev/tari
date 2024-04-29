@@ -1,0 +1,18 @@
+.review {
+	padding: 50px;
+}
+
+.img_wrapper {
+	margin-top: 30px;
+}
+
+.date {
+	display: inline-block;
+	margin-top: 15px;
+
+	font-size: 16px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+@import './adaptive-review';

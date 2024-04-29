@@ -1,0 +1,21 @@
+@import '/src/assets/styles/vars/mediaQueries';
+@import '/src/assets/styles/vars/colors';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+}
+
+@media #{$ui-mobile-interval} {
+	.cards {
+		grid-template-columns: 1fr;
+
+		& > *:nth-child(odd) {
+			background-color: $color-yellow;
+		}
+		& > *:nth-child(even) {
+			background-color: $color-light-yellow;
+		}
+	}
+}

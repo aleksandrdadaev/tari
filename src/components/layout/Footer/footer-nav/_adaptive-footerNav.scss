@@ -1,0 +1,23 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.nav {
+		flex-wrap: wrap;
+		row-gap: 35px;
+
+		& > *:nth-child(n) {
+			width: 50%;
+		}
+	}
+}
+
+@media #{$ui-mobile-interval} {
+	.nav {
+		& > *:nth-child(n) {
+			width: 100%;
+		}
+	}
+}

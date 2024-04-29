@@ -1,0 +1,52 @@
+.modal-bg {
+	position: fixed;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+	position: relative;
+
+	padding: 30px 20px 20px;
+	width: 600px;
+
+	background-color: #fff;
+}
+
+.modal-header {
+	margin-bottom: 40px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.modal-title {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+.modal-close {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+
+	width: 30px;
+	height: 30px;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	background-image: url('/src/assets/icons/modal/close.svg');
+}
+
+@import './adaptive';

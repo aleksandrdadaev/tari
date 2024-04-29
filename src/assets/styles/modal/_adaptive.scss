@@ -1,0 +1,29 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+}
+
+@media #{$ui-mobile-interval} {
+	.modal {
+		padding: 15px 10px 15px;
+		width: 300px;
+	}
+
+	.modal-header {
+		margin-bottom: 20px;
+		gap: 20px;
+	}
+
+	.modal-title {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.modal-close {
+		top: 15px;
+		right: 10px;
+	}
+}

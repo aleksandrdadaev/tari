@@ -1,0 +1,10 @@
+.contacts {
+	grid-column: 2;
+	margin: 50px 0 40px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@import './adaptive';

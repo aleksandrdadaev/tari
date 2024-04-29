@@ -1,0 +1,29 @@
+.profile {
+	margin: 70px 0 200px;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 100px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.text {
+	& > *:nth-child(2) {
+		margin-top: 30px;
+	}
+}
+
+.list {
+	padding-left: 25px;
+
+	& > li:nth-child(n) {
+		list-style-type: disc;
+	}
+}
+
+@import './adaptive';

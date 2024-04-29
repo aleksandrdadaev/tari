@@ -1,0 +1,10 @@
+$ui-desktop: 1600px;
+$ui-laptop: 1000px;
+$ui-tablet: 640px;
+$ui-mobile: 320px;
+
+$ui-laptop-interval: 'screen and (max-width: #{calc($ui-desktop - 1px)}) and (min-width: #{$ui-laptop})';
+
+$ui-tablet-interval: 'screen and (max-width: #{calc($ui-laptop - 1px)}) and (min-width: #{$ui-tablet})';
+
+$ui-mobile-interval: 'screen and (max-width: #{calc($ui-tablet - 1px)}) and (min-width: #{$ui-mobile})';

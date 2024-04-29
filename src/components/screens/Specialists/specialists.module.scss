@@ -1,0 +1,9 @@
+.specialists {
+	margin-top: 70px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+@import './adaptive';

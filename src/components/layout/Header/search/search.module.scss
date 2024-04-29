@@ -1,0 +1,34 @@
+.search {
+	width: 480px;
+	padding-bottom: 5px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	gap: 5px;
+
+	&_input {
+		width: 100%;
+		height: 20px;
+
+		font-size: 20px;
+	}
+
+	&_button {
+		width: 15px;
+		height: 15px;
+
+		background-size: cover;
+		background-image: url('/src/assets/icons/search/search.svg');
+
+		opacity: 0.5;
+
+		transition: opacity 0.4s ease;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+@import './adaptive-search';

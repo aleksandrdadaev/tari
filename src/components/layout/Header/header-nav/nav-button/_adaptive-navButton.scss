@@ -1,0 +1,23 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.button {
+		gap: 5px;
+	}
+
+	.links {
+		position: relative;
+		padding: 15px 20px;
+	}
+
+	.link {
+		font-size: 16px;
+		line-height: 16px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

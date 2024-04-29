@@ -1,0 +1,11 @@
+.wrapper {
+	margin: 30px 0 100px;
+}
+
+.prices {
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+}
+
+@import './adaptive';

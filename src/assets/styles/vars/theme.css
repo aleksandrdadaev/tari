@@ -1,0 +1,26 @@
+:root {
+	--font-size-default: 1;
+	--font-size-theme1: 1;
+	--font-size-theme2: 1.5;
+	--font-size-theme3: 2;
+
+	--font-color-default: #000;
+	--font-color-theme1: #000 !important;
+	--font-color-theme2: #fff !important;
+	--font-color-theme3: #1eb033 !important;
+
+	--background-color-default: #fff;
+	--background-color-theme1: #fff !important;
+	--background-color-theme2: #000 !important;
+	--background-color-theme3: #000 !important;
+
+	--border-color-default: #000;
+	--border-color-theme1: #000 !important;
+	--border-color-theme2: #fff !important;
+	--border-color-theme3: #1eb033 !important;
+
+	--font-size: var(--font-size-default);
+	--font-color: var(--font-color-default);
+	--background-color: var(--background-color-default);
+	--border-color: var(--border-color-default);
+}

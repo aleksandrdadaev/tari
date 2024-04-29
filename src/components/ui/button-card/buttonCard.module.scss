@@ -1,0 +1,11 @@
+@import '/src/assets/styles/vars/colors';
+
+.button {
+	text-align: start;
+
+	background-color: #fff !important;
+	padding: 45px;
+	border: 5px solid $color-green;
+}
+
+@import './adaptive-buttonCard';

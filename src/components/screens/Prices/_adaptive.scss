@@ -1,0 +1,17 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.wrapper {
+		margin: 15px 0 50px;
+	}
+
+	.prices {
+		gap: 35px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

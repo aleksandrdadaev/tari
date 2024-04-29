@@ -1,0 +1,14 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.main {
+		gap: 100px;
+		padding: 100px 0;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

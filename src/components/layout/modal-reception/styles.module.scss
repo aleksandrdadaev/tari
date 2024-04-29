@@ -1,0 +1,14 @@
+.info {
+	margin-top: 70px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.paragraph {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+@import './adaptive';

@@ -1,0 +1,23 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.card {
+		padding: 25px;
+		& > *:nth-child(2) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.title {
+		margin-bottom: 15px;
+
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

@@ -1,0 +1,19 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.search {
+		width: 100%;
+
+		&_input {
+			height: 16px;
+
+			font-size: 16px;
+		}
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

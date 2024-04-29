@@ -1,0 +1,60 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+}
+
+@media #{$ui-mobile-interval} {
+	.form {
+		& > input[type='tel'],
+		& > textarea {
+			margin-top: 15px;
+		}
+	}
+
+	.form-input {
+		height: 22px;
+		padding-bottom: 5px;
+
+		font-size: 16px;
+	}
+
+	.form-textarea {
+		padding: 10px;
+
+		height: auto;
+		line-height: 22px;
+	}
+
+	.form-file {
+		margin-top: 10px;
+	}
+
+	.form-label {
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	.form-agreement {
+		margin-top: 15px;
+
+		align-items: start;
+		gap: 5px;
+	}
+
+	.form-text {
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.form-submit {
+		margin-top: 25px;
+
+		padding: 13px;
+
+		font-size: 14px;
+		line-height: 14px;
+	}
+}

@@ -1,0 +1,15 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.specialists {
+		margin-top: 35px;
+
+		gap: 25px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

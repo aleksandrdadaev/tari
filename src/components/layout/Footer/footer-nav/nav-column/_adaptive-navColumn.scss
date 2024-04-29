@@ -1,0 +1,14 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.title {
+		font-size: 18px;
+		line-height: 18px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

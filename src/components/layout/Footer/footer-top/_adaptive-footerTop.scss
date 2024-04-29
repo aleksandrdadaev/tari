@@ -1,0 +1,42 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.footer_top {
+		margin-bottom: 40px;
+
+		flex-wrap: wrap;
+		gap: 40px;
+
+		& > *:nth-child(2) {
+			width: 50%;
+		}
+	}
+
+	.company {
+		gap: 25px;
+	}
+
+	.title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+	.footer_top {
+		gap: 30px;
+
+		& > *:nth-child(2) {
+			width: 100%;
+		}
+	}
+
+	.company {
+		& > *:nth-child(1) {
+			flex-shrink: 0;
+		}
+	}
+}

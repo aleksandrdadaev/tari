@@ -1,0 +1,17 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+	.row {
+		grid-template-columns: 50% 1fr;
+		grid-column-gap: 50px;
+	}
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.row {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

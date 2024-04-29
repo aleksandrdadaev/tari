@@ -1,0 +1,14 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.logo_wrapper {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

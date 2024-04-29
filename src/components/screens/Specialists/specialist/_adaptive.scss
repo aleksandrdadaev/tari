@@ -1,0 +1,32 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.specialist {
+		grid-template-columns: 1fr;
+		grid-row-gap: 25px;
+	}
+
+	.info {
+		justify-content: end;
+	}
+
+	.text {
+		& > *:nth-child(2) {
+			margin-top: 10px;
+		}
+		& > *:nth-child(3) {
+			margin-top: 15px;
+		}
+	}
+
+	.link {
+		font-size: 14px;
+		line-height: 14px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}

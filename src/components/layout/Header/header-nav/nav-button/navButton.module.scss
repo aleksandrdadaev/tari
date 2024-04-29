@@ -1,0 +1,58 @@
+@import '/src/assets/styles/vars/colors.scss';
+
+.button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	&_open {
+		color: $color-green;
+	}
+}
+
+.img {
+	width: 10px;
+	height: 10px;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&.close {
+		background-image: url('/src/assets/icons/nav/arrow-close.svg');
+	}
+
+	&.open {
+		background-image: url('/src/assets/icons/nav/arrow-open.svg');
+
+		align-self: end;
+	}
+}
+
+.links {
+	position: absolute;
+	width: max-content;
+
+	margin-top: 10px;
+	padding: 20px;
+
+	flex-direction: column;
+	gap: 15px;
+
+	&_close {
+		display: none;
+	}
+
+	&_open {
+		display: flex;
+	}
+}
+
+.link {
+	width: fit-content;
+
+	font-size: 20px;
+	line-height: 20px;
+}
+
+@import './adaptive-navButton';

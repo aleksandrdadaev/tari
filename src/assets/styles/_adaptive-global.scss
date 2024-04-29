@@ -1,0 +1,74 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.nav_link {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	.info_wrapper {
+		margin: 15px 0 35px;
+	}
+
+	.info {
+		grid-column: 1;
+
+		& > *:nth-child(2) {
+			width: 50%;
+		}
+	}
+
+	.document_list {
+		margin-top: 25px;
+
+		gap: 15px;
+	}
+
+	.green-button {
+		padding: 13px;
+
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	.paragraph {
+		@include fontSize(16px, 22px);
+	}
+
+	.main-title {
+		font-size: 48px;
+		line-height: 58px;
+	}
+
+	.sub-title {
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	.another-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+	.container {
+		padding: 0 10px;
+	}
+	.info {
+		& > *:nth-child(2) {
+			width: 100%;
+		}
+	}
+	.main-title {
+		word-wrap: break-word;
+	}
+}

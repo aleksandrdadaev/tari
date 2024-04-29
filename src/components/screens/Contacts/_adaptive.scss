@@ -1,0 +1,14 @@
+@import '/src/assets/styles/vars/mediaQueries';
+
+@media screen and (max-width: #{calc($ui-desktop - 1px)}) {
+}
+
+@media screen and (max-width: #{calc($ui-laptop - 1px)}) {
+	.contacts {
+		grid-column: 1;
+		margin: 25px 0 40px;
+	}
+}
+
+@media #{$ui-mobile-interval} {
+}
